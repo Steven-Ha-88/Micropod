@@ -8,13 +8,11 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: "Barcadia",
-    description: "A super-fast site using GatsbyJS",
-    author: "Morgan Baker",
-    twitterUsername: "barcadia",
-    facebookUsername: "barcadia",
+    title: "Kelvin Carmichael",
+    description: "Drummer and Producer",
+    author: "Steven Ha",
+    facebookUsername: "Kelvin Carmichael",
     instagramUsername: "barcadia",
-    linkedinUsername: "morgan-baker-development",
     image: "/macbook-color.jpg",
     siteUrl: "https://barcadia.netlify.com",
     developerName: "Morgan Baker Development",
@@ -24,14 +22,16 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-      },
-    },
+    `gatsby-plugin-sass`,
+
+    // {
+    //   resolve: `gatsby-source-contentful`,
+    //   options: {
+    //     spaceId: process.env.CONTENTFUL_SPACE_ID,
+    //     // Learn about environment variables: https://gatsby.dev/env-vars
+    //     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+    //   },
+    // },
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {

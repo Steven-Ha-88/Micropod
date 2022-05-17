@@ -11,7 +11,6 @@ const getData = graphql`
         image
         author
         siteUrl
-        twitterUsername
       }
     }
   }
@@ -20,13 +19,7 @@ const getData = graphql`
 const SEO = ({ title, description }) => {
   const { site } = useStaticQuery(getData)
 
-  const {
-    siteDesc,
-    siteTitle,
-    siteUrl,
-    image,
-    twitterUsername,
-  } = site.siteMetadata
+  const { siteDesc, siteTitle, siteUrl, image } = site.siteMetadata
   return (
     <Helmet htmlAttribute={{ lang: "en" }} title={`${title} | ${siteTitle}`}>
       <meta name="description" content={description || siteDesc} />
@@ -37,15 +30,14 @@ const SEO = ({ title, description }) => {
       <meta property="og:title" content={siteTitle} />
       <meta property="og:description" content={siteDesc} />
       <meta property="og:image" content={`${siteUrl}${image}`} />
+      <link
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous"
+      />
       <meta property="og:image" content="400" />
       <meta property="og:image:height" content="300" />
-
-      {/* Twitter Card */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content={twitterUsername} />
-      <meta name="twitter:title" content={siteTitle} />
-      <meta name="twitter:description" content={siteDesc} />
-      <meta name="twitter:image" content={`${siteUrl}${image}`} />
     </Helmet>
   )
 }
