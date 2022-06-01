@@ -1,70 +1,81 @@
 import styled from "styled-components"
 
 export const BannerModuleStyles = styled.section`
+  width: 100vw;
   height: 100vh;
-  position: relative;
-  padding: 30px var(--borderSpacing);
-
-  .container {
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  @media (max-width: 480px) {
+    height: unset;
   }
 
-  .gradient,
   .banner__image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    background: url("https://imgur.com/t0UzL8g.jpg");
+    // flex-grow: 1;
+    // flex-basis: 50%;
+    width: 50%;
     height: 100%;
-    z-index: 1;
-  }
-
-  .gradient {
-    background: radial-gradient(
-      at bottom left,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0)
-    );
-  }
-
-  .banner__content {
-    position: relative;
-    z-index: 2;
-    min-height: 33vh;
-    width: 100%;
-    max-width: 700px;
-
-    @media (min-width: 768px) {
-      width: 66vw;
-    }
-
-    h1,
-    h2 {
-      text-shadow: var(--textShadow);
-    }
-
-    h1 {
-      border-bottom: 2px solid rgba(255, 255, 255, 0.15);
-      display: inline-block;
-    }
-
-    h2 {
-      font-size: var(--h5);
-      font-weight: 400;
-    }
-
-    h1,
-    .price {
-      margin-top: 0;
-      font-size: var(--bannerTitle);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (max-width: 480px) {
+      width: 100%;
+      height: 50vh;
     }
   }
 
-  .banner__btns {
+  .banner__description {
+    width: 50%;
     display: flex;
-    gap: var(--gap);
+    justify-content: center;
+    background-color: white;
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+
+    .content {
+      // flex-grow: 1;
+      // flex-basis: 50%;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+      position: relative;
+      @media (max-width: 480px) {
+        justify-content: unset;
+      }
+
+      .title {
+        font-size: 70px;
+        font-weight: 700;
+        color: #5c5c5c;
+        line-height: 75px;
+        font-family: "Brandon Grotesque Bold", sans-serif;
+        @media (max-width: 480px) {
+          font-size: 60px;
+        }
+      }
+
+      .text {
+        max-width: 75%;
+        margin: 30px auto 0;
+        font-size: 25px;
+      }
+
+      .line {
+        width: 1px;
+        height: 120px;
+        background-color: #b4b4b4;
+        position: absolute;
+        bottom: -17px;
+        left: 50%;
+        transform-origin: 0 0;
+        @media (max-width: 640px) {
+          position: relative;
+          bottom: 0;
+          margin: 30px 0 -30px;
+        }
+      }
+    }
   }
 `

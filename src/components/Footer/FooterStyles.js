@@ -1,8 +1,9 @@
 import styled from "styled-components"
 
 export const FooterStyles = styled.footer`
+  background-color: #b7c1f6;
   &.section {
-    padding: 0 var(--borderSpacing) var(--gap) var(--borderSpacing);
+    padding: 0 var(--borderSpacing) var(--gap) 50px;
 
     .container {
       display: flex;

@@ -8,14 +8,18 @@ export const NavModuleStyles = styled.nav`
     left: 0;
     width: 100%;
     z-index: 100;
-    padding: 20px var(--borderSpacing) 0 var(--borderSpacing);
+    padding: 20px var(--borderSpacing) 0 35px;
+
+    @media (max-width: 480px) {
+      padding-left: 20px;
+    }
 
     @media (min-width: 1024px) {
       padding-top: 50px;
     }
 
     @media (min-width: 1440px) {
-      padding-top: 70px;
+      padding-top: 40px;
     }
   }
 
@@ -23,11 +27,12 @@ export const NavModuleStyles = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row-reverse;
     height: 100%;
   }
 
   .menu {
-    background-color: #000;
+    background-color: #b7c1f6;
     width: var(--menuWidth);
     transform: translateX(calc(var(--menuWidth) * -1));
     height: 100%;
@@ -36,7 +41,7 @@ export const NavModuleStyles = styled.nav`
     left: 0;
     position: fixed;
     z-index: 99;
-    padding: 30px var(--borderSpacing);
+    padding: 30px 60px;
     display: flex;
     align-items: center;
   }
@@ -106,32 +111,6 @@ export const NavTopLevel = styled.ul`
   }
 `
 
-export const SubNavStyles = styled(motion.ul)`
-  padding-left: calc(var(--gap) / 2);
-  list-style: none;
-  margin: 0;
-
-  > li {
-    font-size: var(--h4);
-    font-weight: 700;
-
-    &:hover {
-      > a {
-        color: var(--primary);
-      }
-    }
-  }
-
-  @media (min-width: 1024px) {
-    padding-left: var(--gap);
-  }
-
-  hr {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-`
-
 export const HamburgerStyles = styled(motion.button)`
   background-color: transparent;
   border: none;
@@ -148,7 +127,7 @@ export const HamburgerStyles = styled(motion.button)`
 
   .bar {
     display: block;
-    background-color: #fff;
+    background-color: #7e7474;
     height: 2px;
     border-radius: 2px;
 
@@ -182,6 +161,21 @@ export const LogoStyles = styled.div`
   &:focus {
     a {
       color: var(--primary);
+    }
+  }
+
+  .logo {
+    width: 150px;
+    height: 150px;
+
+    @media (max-width: 480px) {
+      width: 90px;
+      height: 90px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 `

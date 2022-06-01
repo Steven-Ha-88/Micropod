@@ -8,15 +8,14 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: "Kelvin Carmichael",
-    description: "Drummer and Producer",
+    title: "The Little Oobae Corner",
+    description: "Bubble Tea - Halo Halo - Ube Desserts",
     author: "Steven Ha",
-    facebookUsername: "Kelvin Carmichael",
-    instagramUsername: "barcadia",
+    facebookUsername: "thelittleoobaecorner",
+    instagramUsername: "thelittleoobaecorner",
     image: "/macbook-color.jpg",
     siteUrl: "https://barcadia.netlify.com",
-    developerName: "Morgan Baker Development",
-    developerUrl: "https://www.morganbaker.dev",
+    developerName: "steven.dev",
   },
   /* Your site config here */
   plugins: [

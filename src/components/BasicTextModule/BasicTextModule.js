@@ -6,13 +6,10 @@ import { Link } from "gatsby"
 const BasicTextModule = ({ title, content, link, linkText }) => {
   return (
     <BasicTextModuleStyles className="section">
-      <div className="container container__tight">
-        <div>
-          {title && <h2>{title}</h2>}
-          {content && <p style={{ marginBottom: "60px" }}>{content}</p>}
-
-          <Button text="Read Bio" />
-        </div>
+      <div className="text">
+        <div className="title">{title}</div>
+        <div className="line"></div>
+        <div className="content">{content}</div>
       </div>
     </BasicTextModuleStyles>
   )

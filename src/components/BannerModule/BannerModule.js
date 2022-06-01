@@ -5,57 +5,25 @@ import { StaticImage } from "gatsby-plugin-image"
 import Button from "../Button/Button"
 
 const BannerModule = ({ children, title, subTitle, price, enquire }) => {
-  function scrollToArea() {
-    navigate("#topContent")
-  }
-
   return (
     <>
       <BannerModuleStyles>
-        {children ? (
-          children
-        ) : (
-          <StaticImage
-            className="banner__image"
-            imgClassName="banner__image--content"
-            src="../../../static/selfie_blue.jpg"
-            alt="Banner Image"
-            layout="fullWidth"
-            placeholder="blurred"
-          />
-        )}
-
-        <div className="container">
-          <div className="banner__content">
-            {title && (
-              <h1>
-                {title}
-                <span style={{ color: "var(--primary)" }}>.</span>
-              </h1>
-            )}
-            {subTitle && <h2>{subTitle}</h2>}
-            {price && (
-              <h2 className="price">
-                £{price}
-                <span style={{ color: "var(--primary)" }}>.</span>
-              </h2>
-            )}
-            <div className="banner__btns">
-              {enquire && (
-                <Button
-                  className="btn"
-                  text="Enquire Now"
-                  as={Link}
-                  to="/contact"
-                />
-              )}
-              <Button onClick={scrollToArea} text="Learn More" />
+        <div className="banner__image"></div>
+        <div className="banner__description">
+          <div className="content">
+            <div className="title">
+              Natural,
+              <br /> Healthy and Freshly Brewed
             </div>
+            <div className="text">
+              Our mission is to provide the best quality – natural, healthy,
+              freshly brewed – tea and beverages that are tailored to individual
+              taste and preference.
+            </div>
+            <div className="line"></div>
           </div>
         </div>
-        <div className="gradient"></div>
       </BannerModuleStyles>
-      <span id="topContent"></span>
     </>
   )
 }

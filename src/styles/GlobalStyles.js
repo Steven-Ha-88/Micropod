@@ -7,9 +7,9 @@ export const GlobalStyle = createGlobalStyle`
   --borderSpacing: 30px;
   --menuWidth: 100vw;
   --blockquote: 20px;
-  --background: #1b1b1b;
+  --background: #ffffff00;
   --primary: #ffc400;
-  --bodyColor: #afc2cb;
+  --bodyColor: white;
   --inActive: #555;
   --letterSpacing: -0.075rem;
   --boxShadow: 0px 15px 22px 3px rgba(0, 0, 0, 0.55);
@@ -77,12 +77,13 @@ export const GlobalStyle = createGlobalStyle`
 
 
 body {
-    font-family: 'Heebo', sans-serif;
+  font-family: 'Brandon Grotesque Regular', sans-serif;
+
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: var(--background);
-    color: #fff;
+    color: #7e7474;
     overflow-x: hidden;
     font-size: var(--p);
 }
@@ -109,7 +110,7 @@ h6 {
 }
 
 h1 {
-    font-size: var(--bannerTitle);
+    font-size: 60px;
 }
 
 h2 {
@@ -192,9 +193,9 @@ blockquote {
   margin-left: auto;
   margin-right: auto;
 
-  &__tight {
-    max-width: 1400px;
-  }
+  // &__tight {
+  //   max-width: 1400px;
+  // }
 
   &__scroll {
     overflow-x: scroll;
@@ -226,7 +227,7 @@ blockquote {
 .section {
     margin-top: var(--sectionMargin);
     margin-bottom: var(--sectionMargin);
-    padding: 0 var(--borderSpacing);
+    padding: 0 50px;
 
     &.section__padding {
         padding-top: var(--sectionMargin);

@@ -3,8 +3,8 @@ import { Link } from "gatsby"
 import MenuContext from "../MenuContext"
 import { motion } from "framer-motion"
 import { menuItems } from "./NavConstants"
-// import { UseSiteMetadata } from "../../hooks/useSiteMetadata"
-// import useFeaturedProduct from "../../hooks/use-featured-product"
+import logo from "../../../static/logos/logo.jpg"
+
 import { FiChevronDown as Chevron } from "react-icons/fi"
 import {
   NavModuleStyles,
@@ -63,8 +63,11 @@ const NavModule = () => {
 
           <LogoStyles>
             <Link to="/">
-              Kelvin Carmichael
-              <span>.</span>
+              <div className="logo">
+                <img src={logo} alt="little oobae corner logo" />
+              </div>
+              {/* Kelvin Carmichael
+              <span>.</span> */}
             </Link>
           </LogoStyles>
         </div>
@@ -90,30 +93,6 @@ const NavModule = () => {
               </Link>
             </li>
           ))}
-
-          <li className={subNavIsOpen ? "open" : "closed"}>
-            <button
-              type="button"
-              onClick={toggleSubNav}
-              onKeyDown={toggleSubNav}
-            >
-              Products<span>.</span>
-              <Chevron />
-            </button>
-
-            <SubNavStyles
-              initial="closed"
-              animate={subNavIsOpen ? "open" : "closed"}
-              variants={subMenuNavVariants}
-            >
-              <li>
-                <Link onClick={toggleNav} onKeyDown={toggleNav} to="/products">
-                  All Products<span>.</span>
-                </Link>
-              </li>
-              <hr />
-            </SubNavStyles>
-          </li>
         </NavTopLevel>
       </motion.div>
     </NavModuleStyles>
