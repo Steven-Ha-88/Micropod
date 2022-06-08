@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
 
+
 :root {  
   --bannerTitle: 34px;
   --borderSpacing: 30px;

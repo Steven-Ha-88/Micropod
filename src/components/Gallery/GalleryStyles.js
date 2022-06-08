@@ -5,6 +5,10 @@ export const GalleryStyles = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  padding: 0 100px;
+  @media (max-width: 480px) {
+    padding: 0px;
+  }
 
   span {
     width: 282px;
@@ -16,6 +20,11 @@ export const GalleryStyles = styled.div`
 export const Container = styled.div`
   text-align: center;
   padding: 175px 0;
+
+  .instagram {
+    width: 80vw;
+    height: 2536px;
+  }
   h1 {
     font-size: 60px;
     font-weight: 700;

@@ -8,7 +8,7 @@ export const ImageTextStyles = styled.div`
     width: 100%;
     display: flex;
     flex-flow: ${(props) => (props.about ? "row-reverse" : "row")};
-    padding: 100px 200px;
+    padding: 100px 100px;
     background-color: white;
     justify-content: center;
 

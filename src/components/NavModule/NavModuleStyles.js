@@ -196,8 +196,8 @@ export const LogoStyles = styled.div`
   }
 
   .logo {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 
     @media (max-width: 480px) {
       width: 90px;
