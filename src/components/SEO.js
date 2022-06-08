@@ -52,7 +52,7 @@ const SEO = ({ title, description }) => {
       <meta property="og:description" content={siteDesc} />
       <meta property="og:image" content={`${siteUrl}${image}`} />
       <link
-        href="http://fonts.cdnfonts.com/css/brandon-grotesque-regular"
+        href="https://fonts.cdnfonts.com/css/brandon-grotesque-regular"
         rel="stylesheet"
       />
       <link

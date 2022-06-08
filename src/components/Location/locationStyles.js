@@ -27,10 +27,10 @@ export const LocationStyles = styled.section`
     h2 {
       color: #5c5c5c;
       margin-bottom: 8px;
-      text-align: left;
+      text-align: center;
     }
     p {
-      text-align: left;
+      text-align: center;
       font-size: 1.5rem;
       margin: 0px;
     }
@@ -89,7 +89,7 @@ export const LocationStyles = styled.section`
     .line {
       width: 80px;
       height: 1px;
-      background-color: #878787;
+      background-color: #ffc401;
       margin: 30px auto;
     }
 

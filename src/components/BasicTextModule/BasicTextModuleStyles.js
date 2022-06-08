@@ -30,14 +30,14 @@ export const BasicTextModuleStyles = styled.section`
     .line {
       width: 80px;
       height: 1px;
-      background-color: #878787;
+      background-color: #ffc401;
       margin: 30px auto;
     }
 
     .content {
       max-width: 75%;
       margin: 0 auto 0;
-      font-size: 25px;
+      font-size: 20px;
     }
   }
 

@@ -65,7 +65,7 @@ export const BannerModuleStyles = styled.section`
       .line {
         width: 1px;
         height: 120px;
-        background-color: #b4b4b4;
+        background-color: #b7c1f6;
         position: absolute;
         bottom: -17px;
         left: 50%;

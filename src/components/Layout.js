@@ -20,7 +20,7 @@ const ContainerStyles = styled.div`
     width: 1px;
     height: 60px;
     display: block;
-    background: #7e7474;
+    background: #a8b1e3;
     position: absolute;
     top: -60px;
     left: 10px;
@@ -31,7 +31,7 @@ const ContainerStyles = styled.div`
     width: 1px;
     height: 60px;
     display: block;
-    background: #7e7474;
+    background: #a8b1e3;
     position: absolute;
     top: 100%;
     left: 10px;
@@ -67,12 +67,14 @@ const SocialStyles = styled.div`
     margin: 16px 0;
     position: relative;
     font-size: 15px;
+    color: #a8b1e3;
   }
 
   .label {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    color: #a8b1e3;
   }
 `
 
@@ -94,21 +96,44 @@ const Layout = ({ children }) => {
             </div>
             <div className="social">
               <a>
-                <Facebook style={{ width: "1.3rem", height: "1.3rem" }} />
+                <Facebook
+                  style={{
+                    width: "1.3rem",
+                    height: "1.3rem",
+                    color: "#a8b1e3",
+                  }}
+                />
               </a>
             </div>
             <div className="social">
               <a href="https://www.instagram.com/thelittleoobaecorner/">
-                <Instagram style={{ width: "1.3rem", height: "1.3rem" }} />
+                <Instagram
+                  style={{
+                    width: "1.3rem",
+                    height: "1.3rem",
+                    color: "#a8b1e3",
+                  }}
+                />
               </a>
             </div>
             <div className="social">
               <a>
-                <TripAdvisor style={{ width: "1.3rem", height: "1.3rem" }} />
+                <TripAdvisor
+                  style={{
+                    width: "1.3rem",
+                    height: "1.3rem",
+                    color: "#a8b1e3",
+                  }}
+                />
               </a>
             </div>
             <div className="social">
-              <a href="http://www.wingsingsouthwoodford.co.uk/">WingSing</a>
+              <a
+                style={{ color: "#a8b1e3", textDecoration: "none" }}
+                href="http://www.wingsingsouthwoodford.co.uk/"
+              >
+                WingSing
+              </a>
             </div>
           </ContainerStyles>
         </SocialStyles>

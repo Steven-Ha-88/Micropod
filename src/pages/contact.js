@@ -109,11 +109,14 @@ const contact = () => {
         </SimpleBanner>
         <ContactStyles>
           <MessageStyles>
-            <h2>Contact The Little Oobae Corner</h2>
+            <h2>
+              Contact The Little Oobae Corner
+              <span style={{ color: "var(--primary)" }}>.</span>
+            </h2>
             <p className="contact-body">
               For general enquiries, events and large orders, please use the
-              contact form below or email: info@oobaecorner.co.uk For job
-              opportunities, please email: job@oobaecorner.co.uk.
+              contact form below or email: thelittleoobaecorner@gmail.com mob:
+              07895840741
             </p>
           </MessageStyles>
           <FormStyles name="contact form" method="POST" data-netlify="true">

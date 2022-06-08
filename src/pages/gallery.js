@@ -275,7 +275,7 @@ const Gallery = () => {
                 imgStyle={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
             </span>
-            <span>
+            {/* <span>
               <StaticImage
                 className="image"
                 src="https://i.imgur.com/B5UbuxT.jpg"
@@ -283,7 +283,7 @@ const Gallery = () => {
                 placeholder="blurred"
                 imgStyle={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
-            </span>
+            </span> */}
           </GalleryStyles>
         </Container>
       </Layout>

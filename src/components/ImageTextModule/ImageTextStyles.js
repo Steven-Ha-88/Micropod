@@ -35,13 +35,16 @@ export const ImageTextStyles = styled.div`
     .line {
       width: 80px;
       height: 1px;
-      background-color: #b4b4b4;
+      background-color: #b7c1f6;
       margin: 50px 0;
     }
     .content {
-      max-width: 100%;
+      max-width: 70%;
       margin: 30px auto 0;
-      font-size: 25px;
+      font-size: 20px;
+      @media (max-width: 750px) {
+        max-width: 100%;
+      }
     }
   }
 
