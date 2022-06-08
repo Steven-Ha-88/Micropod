@@ -4,8 +4,7 @@ import Seo from "../components/SEO"
 import BannerModule from "../components/BannerModule/BannerModule"
 import ImageTextModule from "../components/ImageTextModule/ImageTextModule"
 import BasicTextModule from "../components/BasicTextModule/BasicTextModule"
-import PerksModule from "../components/PerksModule/PerksModule"
-import Perk from "../components/PerksModule/Perk"
+import Location from "./../components/Location/location.js"
 
 const Index = () => {
   return (
@@ -18,21 +17,20 @@ const Index = () => {
         />
         <ImageTextModule
           title="Tea is Life"
+          image="https://i.imgur.com/coFbKOd.jpg"
           content="Tea is the flow of time, Tea is a wordless conversation. Tea is a fountain of inspiration, transforming each day into a leisurely journey of taste. It craves contemplation. It’s worth savouring."
         />
         <BasicTextModule
           title="Our Journey"
-          content="Kelvin is a professional freelance musician & producer based in London.
-          He has years of experience working live and in the studio with a range of
-          artists, producers & bands in a variety of different styles."
+          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis  aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
         />
         <ImageTextModule
-          title="Menu"
-          content="Tea is the flow of time, Tea is a wordless conversation. Tea is a fountain of inspiration, transforming each day into a leisurely journey of taste. It craves contemplation. It’s worth savouring."
+          title="Oobae-by baby!"
+          image="https://imgur.com/YDlsHeO.jpg"
+          menu
+          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
         />
-        <PerksModule>
-          <Perk title="The Title" content="The content" />
-        </PerksModule>
+        <Location />
       </Layout>
     </>
   )

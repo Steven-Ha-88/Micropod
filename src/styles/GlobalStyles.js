@@ -225,9 +225,9 @@ blockquote {
 }
 
 .section {
-    margin-top: var(--sectionMargin);
-    margin-bottom: var(--sectionMargin);
-    padding: 0 50px;
+    // margin-top: var(--sectionMargin);
+    // margin-bottom: var(--sectionMargin);
+    // padding: 0 50px;
 
     &.section__padding {
         padding-top: var(--sectionMargin);

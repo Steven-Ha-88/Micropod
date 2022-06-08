@@ -8,7 +8,7 @@ export const BasicTextModuleStyles = styled.section`
   .text {
     width: 100%;
     height: 50vh;
-    padding: 20px;
+    padding: 50px 0;
     background-color: #b7c1f6;
     display: flex;
     justify-content: center;
@@ -30,7 +30,7 @@ export const BasicTextModuleStyles = styled.section`
     .line {
       width: 80px;
       height: 1px;
-      background-color: #b4b4b4;
+      background-color: #878787;
       margin: 30px auto;
     }
 

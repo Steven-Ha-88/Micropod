@@ -43,5 +43,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
+    "gatsby-source-filesystem",
   ],
 }

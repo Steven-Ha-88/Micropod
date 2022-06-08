@@ -1,36 +1,9 @@
 import styled from "styled-components"
 
 export const FooterStyles = styled.footer`
-  background-color: #b7c1f6;
-  &.section {
-    padding: 0 var(--borderSpacing) var(--gap) 50px;
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      gap: var(--gap);
-
-      @media (min-width: 768px) {
-        align-items: flex-start;
-        flex-direction: row;
-      }
-
-      @media (min-width: 1200px) {
-        gap: calc(var(--gap) * 2);
-      }
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      li {
-        a {
-          transition: color 0.3s ease;
-        }
-      }
-    }
-  }
+  background-color: white;
+  margin: 20px;
+  text-align: center;
 `
 
 export const FooterMenuStyles = styled.div`

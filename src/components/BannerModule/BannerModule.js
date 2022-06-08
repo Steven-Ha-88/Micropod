@@ -1,10 +1,7 @@
 import * as React from "react"
-import { Link, navigate } from "gatsby"
 import { BannerModuleStyles } from "./BannerModuleStyles"
-import { StaticImage } from "gatsby-plugin-image"
-import Button from "../Button/Button"
 
-const BannerModule = ({ children, title, subTitle, price, enquire }) => {
+const BannerModule = () => {
   return (
     <>
       <BannerModuleStyles>

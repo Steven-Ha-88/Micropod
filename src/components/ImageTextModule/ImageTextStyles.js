@@ -7,13 +7,13 @@ export const ImageTextStyles = styled.div`
   .container {
     width: 100%;
     display: flex;
-    flex-flow: row;
+    flex-flow: ${(props) => (props.about ? "row-reverse" : "row")};
     padding: 100px 200px;
     background-color: white;
     justify-content: center;
 
     @media (max-width: 830px) {
-      flex-flow: column-reverse;
+      flex-flow: ${(props) => (props.about ? "column" : "column-reverse")};
       margin: 0;
       align-items: center;
       padding: 0px;
@@ -23,6 +23,8 @@ export const ImageTextStyles = styled.div`
   .text {
     width: 100%;
     align-self: center;
+    padding: 50px;
+
     .title {
       font-size: 60px;
       font-weight: 700;
@@ -37,7 +39,7 @@ export const ImageTextStyles = styled.div`
       margin: 50px 0;
     }
     .content {
-      max-width: 75%;
+      max-width: 100%;
       margin: 30px auto 0;
       font-size: 25px;
     }

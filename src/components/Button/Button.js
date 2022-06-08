@@ -1,16 +1,8 @@
-import * as React from "react"
-import { MdArrowForward as Arrow } from "react-icons/md"
-import { ButtonStyles } from "./ButtonStyles"
+import React from "react"
+import { ButtonStyles } from "./buttonStyles"
 
-const Button = ({ text, to, as, arrow }) => {
-  return (
-    <ButtonStyles className="btn" as={as} to={to}>
-      {text}
-      {arrow || to ?
-        <Arrow style={{ marginLeft: "10px" }} />
-       : null }
-    </ButtonStyles>
-  )
+const Button = ({ text }) => {
+  return <ButtonStyles>{text}</ButtonStyles>
 }
 
 export default Button

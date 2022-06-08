@@ -14,9 +14,9 @@ export const NavModuleStyles = styled.nav`
       padding-left: 20px;
     }
 
-    @media (min-width: 1024px) {
-      padding-top: 50px;
-    }
+    // @media (min-width: 1024px) {
+    //   padding-top: 50px;
+    // }
 
     @media (min-width: 1440px) {
       padding-top: 40px;
@@ -44,6 +44,33 @@ export const NavModuleStyles = styled.nav`
     padding: 30px 60px;
     display: flex;
     align-items: center;
+  }
+
+  .web-menu {
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  .primary-menu {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    li {
+      display: inline-block;
+      margin-left: 25px;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      font-weight: 700;
+
+      a {
+        text-decoration: none;
+        color: #5c5c5c;
+        :hover {
+          color: var(--primary);
+        }
+      }
+    }
   }
 `
 
@@ -123,6 +150,10 @@ export const HamburgerStyles = styled(motion.button)`
   &:focus {
     border: none;
     outline: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
   }
 
   .bar {

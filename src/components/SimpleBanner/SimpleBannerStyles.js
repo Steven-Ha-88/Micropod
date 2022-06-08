@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const SimpleBannerStyles = styled.section`
-  height: 70vh;
+  height: 60vh;
   position: relative;
   padding: var(--gap) var(--borderSpacing);
 
@@ -15,19 +15,11 @@ export const SimpleBannerStyles = styled.section`
   .banner__image,
   .gradient {
     position: absolute;
-    top: 0;
+    top: -223px;
     left: 0;
     bottom: 0;
     right: 0;
     z-index: 1;
-  }
-
-  .gradient {
-    background: radial-gradient(
-      at bottom left,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0)
-    );
   }
 
   .banner__content {
@@ -41,9 +33,11 @@ export const SimpleBannerStyles = styled.section`
     }
 
     h1 {
-      font-size: var(--bannerTitle);
-      border-bottom: 2px solid rgba(255, 255, 255, 0.15);
-      display: inline-block;
+      font-size: 60px;
+      font-weight: 700;
+      color: white;
+      line-height: 75px;
+      font-family: "Brandon Grotesque Bold", sans-serif;
       text-shadow: var(--textShadow);
     }
   }

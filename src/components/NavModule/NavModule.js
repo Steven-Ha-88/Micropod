@@ -5,11 +5,9 @@ import { motion } from "framer-motion"
 import { menuItems } from "./NavConstants"
 import logo from "../../../static/logos/logo.jpg"
 
-import { FiChevronDown as Chevron } from "react-icons/fi"
 import {
   NavModuleStyles,
   NavTopLevel,
-  SubNavStyles,
   HamburgerStyles,
   LogoStyles,
 } from "./NavModuleStyles"
@@ -18,7 +16,6 @@ import {
   barTwoVariants,
   barThreeVariants,
   menuList,
-  subMenuNavVariants,
 } from "./NavAnim"
 
 const NavModule = () => {
@@ -60,6 +57,16 @@ const NavModule = () => {
               variants={barThreeVariants}
             ></motion.span>
           </HamburgerStyles>
+
+          <div className="web-menu">
+            <ul className="primary-menu">
+              {menuItems.map((item) => (
+                <li key={item.text}>
+                  <Link to={item.path}>{item.text}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
           <LogoStyles>
             <Link to="/">

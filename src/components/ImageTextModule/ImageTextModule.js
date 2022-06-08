@@ -1,19 +1,21 @@
 import * as React from "react"
-import Button from "../Button/Button"
 import { ImageTextStyles } from "./ImageTextStyles"
-import { Link } from "gatsby"
+import MenuButton from "./../Button/button"
 
-const ImageTextModule = ({ title, content, link, linkText }) => {
+const ImageTextModule = ({ title, content, menu, image, about }) => {
   return (
-    <ImageTextStyles className="section">
+    <ImageTextStyles about={about} className="section">
       <div className="container">
         <div className="text">
           <div className="title">{title}</div>
           <div className="line"></div>
-          <div className="content">{content}</div>
+          <div className="content">
+            {content}
+            {menu ? <MenuButton text="Menu" /> : null}
+          </div>
         </div>
         <div className="image">
-          <img src="https://imgur.com/YDlsHeO.jpg" alt="cake" />
+          <img src={image} alt="cake" />
         </div>
       </div>
     </ImageTextStyles>

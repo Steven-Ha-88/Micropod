@@ -6,6 +6,12 @@ import { motion } from "framer-motion"
 import { GlobalStyle } from "../styles/GlobalStyles"
 import styled from "styled-components"
 
+import {
+  FaFacebookSquare as Facebook,
+  FaInstagram as Instagram,
+  FaTripadvisor as TripAdvisor,
+} from "react-icons/fa"
+
 const ContainerStyles = styled.div`
   position: relative;
 
@@ -84,16 +90,25 @@ const Layout = ({ children }) => {
         <SocialStyles>
           <ContainerStyles>
             <div className="social label">
-              <a>Follow Us</a>
+              <span>Follow Us</span>
             </div>
             <div className="social">
-              <a>Facebook</a>
+              <a>
+                <Facebook style={{ width: "1.3rem", height: "1.3rem" }} />
+              </a>
             </div>
             <div className="social">
-              <a>Instagram</a>
+              <a href="https://www.instagram.com/thelittleoobaecorner/">
+                <Instagram style={{ width: "1.3rem", height: "1.3rem" }} />
+              </a>
             </div>
             <div className="social">
-              <a>WingSing</a>
+              <a>
+                <TripAdvisor style={{ width: "1.3rem", height: "1.3rem" }} />
+              </a>
+            </div>
+            <div className="social">
+              <a href="http://www.wingsingsouthwoodford.co.uk/">WingSing</a>
             </div>
           </ContainerStyles>
         </SocialStyles>

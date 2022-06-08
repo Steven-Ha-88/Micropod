@@ -14,7 +14,7 @@ export const ContactStyles = styled.section`
   input,
   textarea {
     background-color: #000;
-    color: #fff;
+    color: #5c5c5c;
     border: none;
     outline: 2px solid rgba(255, 255, 255, 0.15);
     border-radius: 6px;
