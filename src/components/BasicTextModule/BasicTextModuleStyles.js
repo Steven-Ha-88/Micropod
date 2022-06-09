@@ -24,7 +24,7 @@ export const BasicTextModuleStyles = styled.section`
       font-weight: 700;
       color: #5c5c5c;
       line-height: 75px;
-      font-family: "Brandon Grotesque Bold", sans-serif;
+      font-family: "brandon_bold", sans-serif;
     }
 
     .line {

@@ -47,10 +47,10 @@ export const BannerModuleStyles = styled.section`
 
       .title {
         font-size: 70px;
-        font-weight: 700;
+        font-weight: 900;
         color: #5c5c5c;
         line-height: 75px;
-        font-family: "Brandon Grotesque Bold", sans-serif;
+        font-family: "brandon_bold", sans-serif;
         @media (max-width: 480px) {
           font-size: 60px;
         }

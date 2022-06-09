@@ -20,7 +20,7 @@ const ContainerStyles = styled.div`
     width: 1px;
     height: 60px;
     display: block;
-    background: #a8b1e3;
+    background: #ffe8bb;
     position: absolute;
     top: -60px;
     left: 10px;
@@ -31,7 +31,7 @@ const ContainerStyles = styled.div`
     width: 1px;
     height: 60px;
     display: block;
-    background: #a8b1e3;
+    background: #ffe8bb;
     position: absolute;
     top: 100%;
     left: 10px;
@@ -67,14 +67,14 @@ const SocialStyles = styled.div`
     margin: 16px 0;
     position: relative;
     font-size: 15px;
-    color: #a8b1e3;
+    color: #ffe8bb;
   }
 
   .label {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #a8b1e3;
+    color: #ffe8bb;
   }
 `
 
@@ -95,23 +95,12 @@ const Layout = ({ children }) => {
               <span>Follow Us</span>
             </div>
             <div className="social">
-              <a>
-                <Facebook
-                  style={{
-                    width: "1.3rem",
-                    height: "1.3rem",
-                    color: "#a8b1e3",
-                  }}
-                />
-              </a>
-            </div>
-            <div className="social">
               <a href="https://www.instagram.com/thelittleoobaecorner/">
                 <Instagram
                   style={{
                     width: "1.3rem",
                     height: "1.3rem",
-                    color: "#a8b1e3",
+                    color: "#ffe8bb",
                   }}
                 />
               </a>
@@ -122,14 +111,14 @@ const Layout = ({ children }) => {
                   style={{
                     width: "1.3rem",
                     height: "1.3rem",
-                    color: "#a8b1e3",
+                    color: "#ffe8bb",
                   }}
                 />
               </a>
             </div>
             <div className="social">
               <a
-                style={{ color: "#a8b1e3", textDecoration: "none" }}
+                style={{ color: "#ffe8bb", textDecoration: "none" }}
                 href="http://www.wingsingsouthwoodford.co.uk/"
               >
                 WingSing

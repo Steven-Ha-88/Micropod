@@ -37,7 +37,7 @@ export const SimpleBannerStyles = styled.section`
       font-weight: 700;
       color: white;
       line-height: 75px;
-      font-family: "Brandon Grotesque Bold", sans-serif;
+      font-family: "brandon_bold", sans-serif;
       text-shadow: var(--textShadow);
     }
   }

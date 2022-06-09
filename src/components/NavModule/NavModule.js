@@ -60,6 +60,9 @@ const NavModule = () => {
 
           <div className="web-menu">
             <ul className="primary-menu">
+              <li>
+                <a href={"/"}>{"home"}</a>
+              </li>
               {menuItems.map((item) => (
                 <li key={item.text}>
                   <Link to={item.path}>{item.text}</Link>
@@ -69,13 +72,13 @@ const NavModule = () => {
           </div>
 
           <LogoStyles>
-            <Link to="/">
+            <a href="/">
               <div className="logo">
                 <img src={logo} alt="little oobae corner logo" />
               </div>
               {/* Kelvin Carmichael
               <span>.</span> */}
-            </Link>
+            </a>
           </LogoStyles>
         </div>
       </div>
@@ -87,6 +90,11 @@ const NavModule = () => {
         className="menu"
       >
         <NavTopLevel>
+          <li>
+            <a href="/">
+              home <span>.</span>
+            </a>
+          </li>
           {menuItems.map((item, index) => (
             <li key={index}>
               <Link

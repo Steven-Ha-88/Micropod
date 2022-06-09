@@ -14,7 +14,7 @@ module.exports = {
     facebookUsername: "thelittleoobaecorner",
     instagramUsername: "thelittleoobaecorner",
     image: "/macbook-color.jpg",
-    siteUrl: "https://barcadia.netlify.com",
+    siteUrl: "https://stunning-maamoul-25e3aa.netlify.app/",
     developerName: "steven.dev",
   },
   /* Your site config here */
@@ -34,7 +34,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://barcadia.netlify.com",
+        host: "https://stunning-maamoul-25e3aa.netlify.app/",
         sitemap: "https://barcadia.netlify.com/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
