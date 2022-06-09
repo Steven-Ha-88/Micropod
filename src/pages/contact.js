@@ -96,6 +96,11 @@ const FormStyles = styled.form`
 `
 
 const contact = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    // alert("Your message has been sent")
+  }
+
   return (
     <>
       <Seo title="Contact" />
@@ -119,9 +124,9 @@ const contact = () => {
               07895840741
             </p>
           </MessageStyles>
-          <FormStyles name="contact form" method="POST" data-netlify="true">
+          <FormStyles name="contact" method="POST" action="/" netlify>
+            <input type="hidden" name="form-name" value="contact" />
             <div class="details">
-              <input type="hidden" name="form-name" value="contact-form" />
               <input type="text" name="name" placeholder="Full name" />
               <input type="text" name="email" placeholder="Email" />
               <input type="text" name="number" placeholder="Phone number" />
@@ -130,7 +135,11 @@ const contact = () => {
               <p>Message</p>
               <textarea rows="4" name="message"></textarea>
             </div>
-            <Button text="Submit" />
+            {/* <button type="submit">submit</button> */}
+            <Button
+              // onClick={() => alert("Your message has been submitted.")}
+              text="Submit"
+            />
           </FormStyles>
         </ContactStyles>
       </Layout>

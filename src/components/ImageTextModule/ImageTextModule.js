@@ -7,7 +7,10 @@ const ImageTextModule = ({ title, content, menu, image, about }) => {
     <ImageTextStyles about={about} className="section">
       <div className="container">
         <div className="text">
-          <div className="title">{title}</div>
+          <div className="title">
+            {title}
+            <span style={{ color: "var(--primary)" }}>.</span>
+          </div>
           <div className="line"></div>
           <div className="content">
             {content}

@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const ButtonStyles = styled.button`
   display: block;
+  background-color: #f7f2e8;
   font-size: 18px;
   font-weight: 700;
   line-height: 2.5em;
