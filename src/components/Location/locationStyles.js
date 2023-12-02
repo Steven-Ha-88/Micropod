@@ -79,11 +79,9 @@ export const LocationStyles = styled.section`
     }
 
     .title {
-      font-size: 60px;
       font-weight: 700;
       color: #5c5c5c;
       line-height: 75px;
-      font-family: "brandon_bold", sans-serif;
     }
 
     .line {

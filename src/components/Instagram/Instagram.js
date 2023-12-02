@@ -8,7 +8,7 @@ const Title = styled.h1`
   font-weight: 700;
   color: #5c5c5c;
   line-height: 75px;
-  font-family: "brandon_bold", sans-serif;
+  font-family: "DIN-Next-Bold", sans-serif;
 `
 
 const Instagram = () => {
@@ -46,7 +46,7 @@ const Instagram = () => {
   return (
     <>
       <Title>
-        Follow Us
+        <h1>Follow Us</h1>
         <span style={{ color: "var(--primary)" }}>.</span>
       </Title>
       {renderSocial()}

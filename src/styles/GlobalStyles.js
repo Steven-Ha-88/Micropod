@@ -13,6 +13,13 @@ import fontreg4 from "./../../fonts2/brandon-reg.svg"
 import fontreg5 from "./../../fonts2/brandon-reg.ttf"
 import fontreg6 from "./../../fonts/Brandon_reg.otf"
 
+import dinnextboldttf from "./../../fonts/DINNextW1G-Bold.ttf"
+import dinnextboldwoff from "./../../fonts/DINNextW1G-Bold.woff"
+import dinnextboldwoff2 from "./../../fonts/DINNextW1G-Bold.woff2"
+import dinnextregttf from "./../../fonts/DINNextW1G-Regular.ttf"
+import dinnextregwoff from "./../../fonts/DINNextW1G-Regular.woff"
+import dinnextregwoff2 from "./../../fonts/DINNextW1G-Regular.woff2"
+
 export const GlobalStyle = createGlobalStyle`
 :root {  
   --bannerTitle: 34px;
@@ -82,34 +89,29 @@ export const GlobalStyle = createGlobalStyle`
 }  
 
 @font-face {
-  font-family: 'brandon-regular';
-  src: url('${fontreg1}');
-  src: url('${fontreg1}') format('embedded-opentype'),
-       url('${fontreg3}') format('woff2'),
-       url('${fontreg2}') format('woff'),
-       url('${fontreg5}') format('truetype'),
-       url('${fontreg6}') format('opentype'),
-       url('${fontreg4}#brandon-regular') format('svg');
-  font-weight: normal;
+  font-family: 'DIN-Next-Bold';
+  src: url('${dinnextboldwoff2}') format('woff2'),
+      url('${dinnextboldwoff}') format('woff'),
+      url('${dinnextboldttf}') format('truetype');
+  font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'brandon_bold';
-  src: url('${fontBold1}');
-  src: url('${fontBold1}') format('embedded-opentype'),
-       url('${fontBold3}') format('woff2'),
-       url('${fontBold2}') format('woff'),
-       url('${fontBold5}') format('truetype'),
-       url('${fontBold6}') format('opentype'),
-       url('${fontBold4}#brandon_bold') format('svg');
-  font-weight: 900;
+  font-family: 'DIN-Next-Reg';
+  src: url('${dinnextregwoff2}') format('woff2'),
+      url('${dinnextregwoff}') format('woff'),
+      url('${dinnextregttf}') format('truetype');
+  font-weight: normal;
   font-style: normal;
-
+  font-display: swap;
 }
 
+
+
 body {
-  font-family: 'brandon-regular';
+  font-family: 'DIN-Next-Reg';
 
     margin: 0;
     -webkit-font-smoothing: antialiased;
@@ -142,7 +144,10 @@ h6 {
   margin-bottom: 1rem;
 }
 h1 {
-    font-size: 60px;
+    font-size:48px;
+    font-family: "DIN-Next-Bold", sans-serif;
+    letter-spacing: -4px;
+
 }
 h2 {
     font-size: var(--h2);

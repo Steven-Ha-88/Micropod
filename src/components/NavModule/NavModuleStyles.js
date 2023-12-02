@@ -3,15 +3,16 @@ import { motion } from "framer-motion"
 
 export const NavModuleStyles = styled.nav`
   .nav {
-    position: fixed;
+    // position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 100;
-    padding: 20px var(--borderSpacing) 0 35px;
+    padding: 20px 200px;
+    background-color: white;
 
     @media (max-width: 480px) {
-      padding-left: 20px;
+      padding: 20px;
     }
 
     // @media (min-width: 1024px) {
@@ -32,7 +33,7 @@ export const NavModuleStyles = styled.nav`
   }
 
   .menu {
-    background-color: #b7c1f6;
+    background-color: #fcd667;
     width: var(--menuWidth);
     transform: translateX(calc(var(--menuWidth) * -1));
     height: 100%;
@@ -146,6 +147,7 @@ export const HamburgerStyles = styled(motion.button)`
   padding: 0;
   cursor: pointer;
   outline: none;
+  z-index: 999;
 
   &:focus {
     border: none;
@@ -196,12 +198,11 @@ export const LogoStyles = styled.div`
   }
 
   .logo {
-    width: 100px;
-    height: 100px;
+    display: flex;
+    width: 200px;
 
     @media (max-width: 480px) {
-      width: 90px;
-      height: 90px;
+      width: 170px;
     }
 
     img {

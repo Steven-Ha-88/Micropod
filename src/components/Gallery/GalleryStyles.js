@@ -27,6 +27,6 @@ export const Container = styled.div`
     font-weight: 700;
     color: #5c5c5c;
     line-height: 75px;
-    font-family: "brandon_bold", sans-serif;
+    font-family: "DIN-Next-Bold", sans-serif;
   }
 `

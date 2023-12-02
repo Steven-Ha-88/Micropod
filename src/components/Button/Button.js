@@ -1,8 +1,8 @@
 import React from "react"
-import { ButtonStyles } from "./buttonStyles"
+import { AnchorStyles } from "./buttonStyles"
 
-const Button = ({ text }) => {
-  return <ButtonStyles type="submit">{text}</ButtonStyles>
+const Button = ({ text, href }) => {
+  return <AnchorStyles href={href}>{text}</AnchorStyles>
 }
 
 export default Button

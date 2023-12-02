@@ -20,7 +20,7 @@ const ContainerStyles = styled.div`
     width: 1px;
     height: 60px;
     display: block;
-    background: #ffe8bb;
+    background: #f5d6f7;
     position: absolute;
     top: -60px;
     left: 10px;
@@ -31,7 +31,7 @@ const ContainerStyles = styled.div`
     width: 1px;
     height: 60px;
     display: block;
-    background: #ffe8bb;
+    background: #f5d6f7;
     position: absolute;
     top: 100%;
     left: 10px;
@@ -67,14 +67,14 @@ const SocialStyles = styled.div`
     margin: 16px 0;
     position: relative;
     font-size: 15px;
-    color: #ffe8bb;
+    color: #f5d6f7;
   }
 
   .label {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #ffe8bb;
+    color: #f5d6f7;
   }
 `
 
@@ -100,7 +100,7 @@ const Layout = ({ children }) => {
                   style={{
                     width: "1.3rem",
                     height: "1.3rem",
-                    color: "#ffe8bb",
+                    color: "#f5d6f7",
                   }}
                 />
               </a>
@@ -111,17 +111,9 @@ const Layout = ({ children }) => {
                   style={{
                     width: "1.3rem",
                     height: "1.3rem",
-                    color: "#ffe8bb",
+                    color: "#f5d6f7",
                   }}
                 />
-              </a>
-            </div>
-            <div className="social">
-              <a
-                style={{ color: "#ffe8bb", textDecoration: "none" }}
-                href="http://www.wingsingsouthwoodford.co.uk/"
-              >
-                WingSing
               </a>
             </div>
           </ContainerStyles>

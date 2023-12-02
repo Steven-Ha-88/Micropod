@@ -9,7 +9,7 @@ export const ImageTextStyles = styled.div`
     display: flex;
     flex-flow: ${(props) => (props.about ? "row-reverse" : "row")};
     padding: 100px 100px;
-    background-color: white;
+    background-color: ${(props) => (props.menu ? "row-reverse" : "row")};
     justify-content: center;
 
     @media (max-width: 830px) {
@@ -26,11 +26,11 @@ export const ImageTextStyles = styled.div`
     padding: 50px;
 
     .title {
-      font-size: 60px;
+      
       font-weight: 700;
       color: #5c5c5c;
       line-height: 75px;
-      font-family: "brandon_bold", sans-serif;
+  
     }
     .line {
       width: 80px;

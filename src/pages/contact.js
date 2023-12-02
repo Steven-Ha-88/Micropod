@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Seo from "../components/SEO"
 import SimpleBanner from "../components/SimpleBanner/SimpleBanner"
 import styled from "styled-components"
-import Button from "./../components/Button/button"
+import { Button } from "./../components/Button/ButtonStyles"
 
 const ContactStyles = styled.div`
   display: flex;
@@ -42,7 +42,7 @@ const MessageStyles = styled.div`
     font-weight: 700;
     color: #5c5c5c;
     line-height: 75px;
-    font-family: "brandon_bold", sans-serif;
+    font-family: "DIN-Next-Bold", sans-serif;
   }
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -135,11 +135,7 @@ const contact = () => {
               <p>Message</p>
               <textarea rows="4" name="message"></textarea>
             </div>
-            {/* <button type="submit">submit</button> */}
-            <Button
-              // onClick={() => alert("Your message has been submitted.")}
-              text="Submit"
-            />
+            <Button type="submit">Submit</Button>
           </FormStyles>
         </ContactStyles>
       </Layout>

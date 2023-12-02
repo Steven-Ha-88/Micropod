@@ -9,7 +9,8 @@ export const BasicTextModuleStyles = styled.section`
     width: 100%;
     height: 50vh;
     padding: 50px 0;
-    background-color: #b7c1f6;
+    background-color: white;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,11 +21,9 @@ export const BasicTextModuleStyles = styled.section`
     }
 
     .title {
-      font-size: 60px;
       font-weight: 700;
-      color: #5c5c5c;
+      color: rgb(92, 92, 92);
       line-height: 75px;
-      font-family: "brandon_bold", sans-serif;
     }
 
     .line {

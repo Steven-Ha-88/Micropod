@@ -5,9 +5,9 @@ const Location = () => {
   return (
     <LocationStyles className="section">
       <div className="text">
-        <div className="title">
+        <h1 className="title">
           Find us<span style={{ color: "var(--primary)" }}>.</span>
-        </div>
+        </h1>
         <div className="line"></div>
         <div className="content">We are located inside WingSing restaurant</div>
         <div className="address">
@@ -19,13 +19,13 @@ const Location = () => {
 
             <div className="opening-hours">
               <h6>- Opening Hours -</h6>
-              <p>Monday 12-2:15pm, 5-10:30pm</p>
+              <p>Monday 12-10:30pm</p>
               <p>Tuesday Closed</p>
-              <p>Wednesday 12-2:15pm, 5-10:30pm</p>
-              <p>Thursday 12-2:15pm, 5-10:30pm</p>
-              <p>Friday 12-2:15pm, 5-11pm</p>
-              <p>Saturday 12-2:15pm, 11pm</p>
-              <p>Sunday 5pm-10:30pm</p>
+              <p>Wednesday 12-10:30pm</p>
+              <p>Thursday 12-10:30pm</p>
+              <p>Friday 12-11pm</p>
+              <p>Saturday 12-11pm</p>
+              <p>Sunday 4pm-10:30pm</p>
             </div>
           </div>
           <div className="map">

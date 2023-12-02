@@ -15,7 +15,7 @@ export const SimpleBannerStyles = styled.section`
   .banner__image,
   .gradient {
     position: absolute;
-    top: -223px;
+    top: 0;
     left: 0;
     bottom: 0;
     right: 0;
@@ -37,7 +37,7 @@ export const SimpleBannerStyles = styled.section`
       font-weight: 700;
       color: white;
       line-height: 75px;
-      font-family: "brandon_bold", sans-serif;
+      font-family: "DIN-Next-Bold", sans-serif;
       text-shadow: var(--textShadow);
     }
   }

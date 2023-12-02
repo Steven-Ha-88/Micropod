@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import MenuContext from "../MenuContext"
 import { motion } from "framer-motion"
 import { menuItems } from "./NavConstants"
-import logo from "../../../static/logos/logo.jpg"
+import logo from "../../../static/logos/micropod_logo.png"
 
 import {
   NavModuleStyles,
@@ -92,7 +92,7 @@ const NavModule = () => {
         <NavTopLevel>
           <li>
             <a href="/">
-              home <span>.</span>
+              home<span>.</span>
             </a>
           </li>
           {menuItems.map((item, index) => (

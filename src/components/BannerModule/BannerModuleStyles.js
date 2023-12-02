@@ -5,21 +5,22 @@ export const BannerModuleStyles = styled.section`
   height: 100vh;
   display: flex;
   flex-flow: row wrap;
-  @media (max-width: 480px) {
+  @media (max-width: 1024px) {
     height: unset;
+    flex-flow: column;
   }
 
   .banner__image {
-    background: url("https://imgur.com/t0UzL8g.jpg");
+    // background: url("https://imgur.com/t0UzL8g.jpg");
     // flex-grow: 1;
     // flex-basis: 50%;
     width: 50%;
     height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    @media (max-width: 480px) {
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    @media (max-width: 1024px) {
       width: 100%;
-      height: 50vh;
+      height: unset;
     }
   }
 
@@ -28,8 +29,9 @@ export const BannerModuleStyles = styled.section`
     display: flex;
     justify-content: center;
     background-color: white;
-    @media (max-width: 480px) {
+    @media (max-width: 1024px) {
       width: 100%;
+      height: 600px;
     }
 
     .content {
@@ -49,8 +51,9 @@ export const BannerModuleStyles = styled.section`
         font-size: 70px;
         font-weight: 900;
         color: #5c5c5c;
+        padding: 20px 0px;
         line-height: 75px;
-        font-family: "brandon_bold", sans-serif;
+
         @media (max-width: 480px) {
           font-size: 60px;
         }

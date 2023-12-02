@@ -21,12 +21,14 @@ const About = () => {
           title="About The Little Oobae Corner"
           image="https://imgur.com/NAPTcYV.jpg"
           about
-          content="TLorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
+          content="Located in the corner of Wing Sing South Woodford. THE LITTLE OOBAE CORNER is now open for business! We’re small (or shall we say Little), we make Delicious Ube desserts and we specialise in Bubble Tea! We’re kind of like an Asian food hall now! Well, that’s what we tell our WS customers!
 
-          “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
-          The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content.
+          Every dessert is baked on site, tea is freshly brewed every day, oh! And we also churn our own ice cream!
           
-          The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum."
+          The owner has a vast and extensive knowledge of the Bubble Tea industry, having worked in some of the biggest Bubble Tea houses in the UK. Our drinks and desserts are guaranteed the highest quality, only using the finest ingredients sourced from our suppliers from Taiwan and the Philippines.
+          
+          Really, we should have called ourselves The Asian All-Stars Desserts Parlour to be fair, as we sell the most popular drinks and desserts from Asia, such as Halo-Halo, Brown Sugar Pearls with Fresh Milk, Taro Milk Tea, the list is endless…
+          So don’t delay any further, please come and give us a try and support a little local and independently owned Dessert & Bubble Tea business!"
         />
 
         {/* <AboutStyles>
