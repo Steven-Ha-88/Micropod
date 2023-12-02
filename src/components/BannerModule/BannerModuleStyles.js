@@ -54,8 +54,9 @@ export const BannerModuleStyles = styled.section`
         padding: 20px 0px;
         line-height: 75px;
 
-        @media (max-width: 480px) {
+        @media (max-width: 730px) {
           font-size: 60px;
+          line-height: 50px;
         }
       }
 

@@ -20,21 +20,27 @@ const GradientBackground = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(61, 61, 61);
+    background: rgb(255, 153, 151);
     background: linear-gradient(
-      97deg,
-      rgba(61, 61, 61, 1) 0%,
-      rgba(163, 163, 163, 1) 36%,
-      rgba(177, 176, 176, 0.6334908963585435) 55%,
-      rgba(210, 247, 92, 0) 100%
+      90deg,
+      rgba(255, 153, 151, 1) 0%,
+      rgba(255, 200, 200, 1) 49%,
+      rgba(255, 198, 198, 0.5746673669467788) 67%,
+      rgba(235, 235, 235, 0) 100%
     );
+
     z-index: 1;
   }
 
   @media (max-width: 768px) {
     &::before {
-      background: rgb(61,61,61);
-background: linear-gradient(180deg, rgba(61,61,61,1) 0%, rgba(163,163,163,1) 36%, rgba(177,176,176,0.6334908963585435) 55%, rgba(210,247,92,0) 100%);
+      background: rgb(255, 153, 151);
+      background: linear-gradient(
+        180deg,
+        rgba(255, 153, 151, 1) 0%,
+        rgba(255, 200, 200, 1) 49%,
+        rgba(255, 198, 198, 0.5746673669467788) 67%,
+        rgba(235, 235, 235, 0) 100%
       );
     }
   }
@@ -56,11 +62,12 @@ const ImageOverlay = styled.div`
 `
 
 const TextContent = styled.div`
-  padding: 20px;
+  padding: 0px 100px;
   color: #fff; /* Text color */
   width: 50%;
   @media (max-width: 768px) {
     width: 100%;
+    padding: 35px;
   }
 `
 

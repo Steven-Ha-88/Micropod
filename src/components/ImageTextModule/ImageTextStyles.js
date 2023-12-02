@@ -23,20 +23,20 @@ export const ImageTextStyles = styled.div`
   .text {
     width: 100%;
     align-self: center;
-    padding: 50px;
+    @media (max-width: 750px) {
+      padding: 35px;
+    }
 
     .title {
-      
       font-weight: 700;
       color: #5c5c5c;
       line-height: 75px;
-  
+      margin-bottom: 0px;
     }
     .line {
       width: 80px;
-      height: 1px;
-      background-color: #b7c1f6;
-      margin: 50px 0;
+      height: 3px;
+      background-color: rgb(92 92 92);
     }
     .content {
       max-width: 70%;

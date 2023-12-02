@@ -23,7 +23,7 @@ export const BasicTextModuleStyles = styled.section`
     .title {
       font-weight: 700;
       color: rgb(92, 92, 92);
-      line-height: 75px;
+      line-height: 65px;
     }
 
     .line {
